@@ -18,7 +18,7 @@ function criarCard() {
                             <h2>${titulo}</h2>
                         </div>
                         <div class="flex flex-wrap overflow-y-scroll overflow-visible">    
-                            <p class="break-normal overflow-wrap:normal">${descricao}</p>
+                            <p class="break-words overflow-wrap: normal">${descricao}</p>
                         </div>
                         </div>`;
 
