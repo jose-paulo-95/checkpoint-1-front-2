@@ -31,7 +31,7 @@ imageValue.addEventListener('blur', () => {
     let image2 = imageValue.value;
     let cardPreview = `<div class="cardPreview bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/4">
                         <h1 class="text-sm font-bold text-gray-700 mb-2">Preview da Imagem</h1>
-                        <img class="rounded-lg p-1" src=${image2} />
+                        <img class="rounded-lg p-1 max-w-max" src=${image2} />
                         </div>`;
 
     if (imageValue.value) {
