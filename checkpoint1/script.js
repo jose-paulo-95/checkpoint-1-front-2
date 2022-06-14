@@ -14,11 +14,11 @@ function criarCard() {
     let imagem = imageValue.value;
     let cardCriado = `<div class="bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/4">
                         <img class="rounded-lg p-1" src=${imagem} />
-                        <div class="flex justify-center items-center text-black text-2xl">
+                        <div class="flex justify-center items-center text-black text-2xl break-all">
                             <h2>${titulo}</h2>
                         </div>
-                        <div class="flex flex-wrap overflow-y-scroll overflow-visible">    
-                            <p class="break-normal overflow-wrap:normal">${descricao}</p>
+                        <div class="flex flex-wrap overflow-y-scroll overflow-visible h-2/4 break-all">    
+                            <p>${descricao}</p>
                         </div>
                         </div>`;
 
