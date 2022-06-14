@@ -12,13 +12,13 @@ function criarCard() {
     let titulo = tituloValue.value;
     let descricao = descricaoValue.value;
     let imagem = imageValue.value;
-    let cardCriado = `<div class="bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/4">
-                        <img class="rounded-lg p-1" src=${imagem} />
-                        <div class="flex justify-center items-center text-black text-2xl break-all">
+    let cardCriado = `<div class="bg-azul-claro  p-3 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/4">
+                        <img class="rounded-lg " src=${imagem} />
+                        <div class="flex justify-center items-center my-1 font-bold text-black text-2xl break-all ">
                             <h2>${titulo}</h2>
                         </div>
-                    <div class="flex flex-wrap overflow-y-scroll overflow-visible">    
-                            <p class="break-words overflow-wrap: normal">${descricao}</p>
+                        <div class="flex flex-wrap overflow-y-auto overflow-visible h-2/4 break-all">    
+                            <p>${descricao}</p>
                         </div>
                         </div>`;
     document.querySelector('#cardSection').innerHTML += cardCriado;
@@ -29,7 +29,7 @@ function criarCard() {
 
 imageValue.addEventListener('blur', () => {
     let image2 = imageValue.value;
-    let cardPreview = `<div class="cardPreview bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/6">
+    let cardPreview = `<div class="cardPreview bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-4/12 h-2/6">
                         <h1 class="text-sm font-bold text-gray-700 mb-2">Preview da Imagem</h1>
                         <img class="rounded-lg p-1" src=${image2} />
                         </div>`;
