@@ -17,8 +17,8 @@ function criarCard() {
                         <div class="flex justify-center items-center text-black text-2xl break-all">
                             <h2>${titulo}</h2>
                         </div>
-                        <div class="flex flex-wrap overflow-y-scroll overflow-visible h-2/4 break-all">    
-                            <p>${descricao}</p>
+                    <div class="flex flex-wrap overflow-y-scroll overflow-visible">    
+                            <p class="break-words overflow-wrap: normal">${descricao}</p>
                         </div>
                         </div>`;
     document.querySelector('#cardSection').innerHTML += cardCriado;
