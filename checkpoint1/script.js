@@ -21,6 +21,21 @@ function criarCard() {
                             <p class="break-words overflow-wrap: normal">${descricao}</p>
                         </div>
                         </div>`;
-
     document.querySelector('#cardSection').innerHTML += cardCriado;
+    // removendo o preview
+    let remove = document.querySelector('.cardPreview');
+    remove.parentNode.removeChild(remove);
 }
+
+imageValue.addEventListener('blur', () => {
+    let image2 = imageValue.value;
+    let cardPreview = `<div class="cardPreview bg-azul-claro p-1 flex flex-col rounded-lg justify-center w-3/4 lg:w-3/12 h-2/6">
+                        <h1 class="text-sm font-bold text-gray-700 mb-2">Preview da Imagem</h1>
+                        <img class="rounded-lg p-1" src=${image2} />
+                        </div>`;
+
+    if (imageValue.value) {
+        document.querySelector('#cardSection').innerHTML += cardPreview;
+    } else {
+    }
+});
